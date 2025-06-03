@@ -16,6 +16,9 @@
 		3129B57C2DEE8249002BDCBE /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129B57B2DEE8249002BDCBE /* InfoRow.swift */; };
 		3129B57E2DEE8266002BDCBE /* InfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129B57D2DEE8266002BDCBE /* InfoDetails.swift */; };
 		3129B5802DEE827E002BDCBE /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129B57F2DEE827E002BDCBE /* InfoView.swift */; };
+		3129B5822DEE8531002BDCBE /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129B5812DEE8531002BDCBE /* HelloView.swift */; };
+		3129B5842DEE854A002BDCBE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129B5832DEE854A002BDCBE /* SettingsView.swift */; };
+		3129B5862DEE8571002BDCBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3129B5852DEE8571002BDCBE /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		3129B57B2DEE8249002BDCBE /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
 		3129B57D2DEE8266002BDCBE /* InfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetails.swift; sourceTree = "<group>"; };
 		3129B57F2DEE827E002BDCBE /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		3129B5812DEE8531002BDCBE /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		3129B5832DEE854A002BDCBE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		3129B5852DEE8571002BDCBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,9 @@
 				3129B57B2DEE8249002BDCBE /* InfoRow.swift */,
 				3129B57D2DEE8266002BDCBE /* InfoDetails.swift */,
 				3129B57F2DEE827E002BDCBE /* InfoView.swift */,
+				3129B5812DEE8531002BDCBE /* HelloView.swift */,
+				3129B5832DEE854A002BDCBE /* SettingsView.swift */,
+				3129B5852DEE8571002BDCBE /* ContentView.swift */,
 			);
 			path = SwiftUI.develop;
 			sourceTree = "<group>";
@@ -153,9 +162,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3129B5712DEE79F1002BDCBE /* SwiftUI_develop.xcdatamodeld in Sources */,
+				3129B5822DEE8531002BDCBE /* HelloView.swift in Sources */,
 				3129B5652DEE79ED002BDCBE /* SwiftUI_developApp.swift in Sources */,
+				3129B5842DEE854A002BDCBE /* SettingsView.swift in Sources */,
 				3129B57C2DEE8249002BDCBE /* InfoRow.swift in Sources */,
 				3129B5782DEE7C74002BDCBE /* Post.swift in Sources */,
+				3129B5862DEE8571002BDCBE /* ContentView.swift in Sources */,
 				3129B57E2DEE8266002BDCBE /* InfoDetails.swift in Sources */,
 				3129B5802DEE827E002BDCBE /* InfoView.swift in Sources */,
 				3129B57A2DEE7C95002BDCBE /* DataModel.swift in Sources */,
