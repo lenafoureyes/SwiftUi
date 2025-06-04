@@ -9,19 +9,20 @@ import SwiftUI
 
 struct InfoRow: View {
     let post: Post
-    
+    let rowHeight: Double
+
     var body: some View {
         HStack {
             Image(post.imageName)
                 .resizable()
-                .frame(width: 50, height: 50)
+                .frame(width: rowHeight * 0.8, height: rowHeight * 0.8)
                 .cornerRadius(8)
             
             Text(post.title)
-                .font(.headline)
+                .font(.system(size: rowHeight * 0.3))
             
             Spacer()
         }
-        .padding(.vertical, 8)
+        .frame(height: rowHeight) 
     }
 }

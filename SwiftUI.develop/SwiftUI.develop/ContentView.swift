@@ -8,22 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("isTitleEnabled") var titleOn = true
+    @AppStorage("rowHeight") var rowHeight: Double = 50
+    @State private var posts = DataModel.posts  
+    
     var body: some View {
         TabView {
             // 1-я вкладка: InfoView
-            InfoView()
+            InfoView(posts: posts, titleOn: titleOn, rowHeight: rowHeight)
                 .tabItem {
                     Label("Травы", systemImage: "leaf.fill")
                 }
             
-            // 2-я вкладка: HelloView
-            HelloView()
+            // 2-я вкладка: Combinator
+            HerbCombinatorView(allPosts: $posts, allHerbs: DataModel.posts)
                 .tabItem {
-                    Label("Hello", systemImage: "hand.wave.fill")
+                    Label("Комбинатор", systemImage: "leaf.arrow.triangle.circlepath")
                 }
             
-            // 3-я вкладка: SettingsView 
-            SettingsView()
+            // 3-я вкладка: SettingsView
+            SettingsView(titleOn: $titleOn, rowHeight: $rowHeight)
                 .tabItem {
                     Label("Настройки", systemImage: "gearshape.fill")
                 }

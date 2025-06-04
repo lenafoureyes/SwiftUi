@@ -8,16 +8,20 @@
 import SwiftUI
 
 struct InfoView: View {
-    let posts = DataModel.posts
-    
+    let posts: [Post]  
+    var titleOn: Bool
+    var rowHeight: Double
+
     var body: some View {
         NavigationView {
             List(posts) { post in
                 NavigationLink(destination: InfoDetails(post: post)) {
-                    InfoRow(post: post)
+                    InfoRow(post: post, rowHeight: rowHeight)
                 }
+                .listRowInsets(EdgeInsets())
+                .frame(height: rowHeight)
             }
-            .navigationTitle("Травы")
+            .navigationTitle(titleOn ? "Травы" : "")
         }
     }
 }
