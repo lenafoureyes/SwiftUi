@@ -9,15 +9,19 @@ import SwiftUI
 
 struct InfoView: View {
     let posts = DataModel.posts
-    
+    var titleOn: Bool
+    var rowHeight: Double // Принимаем высоту
+
     var body: some View {
         NavigationView {
             List(posts) { post in
                 NavigationLink(destination: InfoDetails(post: post)) {
-                    InfoRow(post: post)
+                    InfoRow(post: post, rowHeight: rowHeight) // Передаём высоту
                 }
+                .listRowInsets(EdgeInsets())
+                .frame(height: rowHeight) 
             }
-            .navigationTitle("Травы")
+            .navigationTitle(titleOn ? "Травы" : "")
         }
     }
 }

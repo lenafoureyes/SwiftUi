@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("isTitleEnabled") var titleOn = true
+    @AppStorage("rowHeight") var rowHeight: Double = 50
+    
     var body: some View {
         TabView {
             // 1-я вкладка: InfoView
-            InfoView()
+            InfoView(titleOn: titleOn, rowHeight: rowHeight)
                 .tabItem {
                     Label("Травы", systemImage: "leaf.fill")
                 }
@@ -23,7 +27,7 @@ struct ContentView: View {
                 }
             
             // 3-я вкладка: SettingsView 
-            SettingsView()
+            SettingsView(titleOn: $titleOn, rowHeight: $rowHeight)
                 .tabItem {
                     Label("Настройки", systemImage: "gearshape.fill")
                 }
